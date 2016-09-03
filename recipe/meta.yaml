@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.2" %}
 
 package:
     name: joblib
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: joblib-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/j/joblib/joblib-{{ version }}.tar.gz
-    sha256: 49b3a0ba956eaa2f077e1ebd230b3c8d7b98afc67520207ada20a4d8b8efd071
+    url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz
+    sha256: 3c39f6c34b63e7aa7ddbcf72ba1c266ba9ec52f40beca5324753a7934f3aec18
 
 build:
     number: 0
