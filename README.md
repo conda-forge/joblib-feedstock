@@ -11,6 +11,18 @@ Summary: Python function as pipeline jobs.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/joblib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/joblib-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/joblib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/joblib-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/joblib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/joblib-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/joblib/badges/version.svg)](https://anaconda.org/conda-forge/joblib)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/joblib/badges/downloads.svg)](https://anaconda.org/conda-forge/joblib)
+
 Installing joblib
 =================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `joblib` available on your platfor
 ```
 conda search joblib --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/joblib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/joblib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/joblib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/joblib-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/joblib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/joblib-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/joblib/badges/version.svg)](https://anaconda.org/conda-forge/joblib)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/joblib/badges/downloads.svg)](https://anaconda.org/conda-forge/joblib)
 
 
 Updating joblib-feedstock
