@@ -5,14 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: joblib-{{ version }}.tar.gz
   url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz
   sha256: 07fa68ce628d55b0b3ed0a1d8cde3760aaa8a60dbe89cf7e309c807560d501cb
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
