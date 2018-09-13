@@ -1,4 +1,4 @@
-{% set version = "0.12.4" %}
+{% set version = "0.12.5" %}
 
 package:
   name: joblib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz
-  sha256: 2d92a1ae6fe4bc374cd6f050a0de488b8eb05faf853f8f936ee007b2bd15b3a8
+  sha256: 59760971a51d91f0bd1ef7f22f7a4ffa91c727a74099188043c70d52d3c55b5c
 
 build:
   number: 0
