@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -19,6 +19,7 @@ requirements:
     - pip
   run:
     - python
+    - setuptools
 
 test:
   imports:
@@ -28,7 +29,7 @@ about:
   home: http://packages.python.org/joblib/
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: 'Python function as pipeline jobs.'
+  summary: 'Python function as pipeline jobs'
 
 extra:
   recipe-maintainers:
