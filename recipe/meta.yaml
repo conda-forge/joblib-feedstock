@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,14 +22,19 @@ requirements:
     - setuptools
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - joblib
+    - joblib.externals
 
 about:
-  home: http://packages.python.org/joblib/
-  license: BSD 3-Clause
+  home: https://pypi.org/project/joblib/
+  summary: 'Lightweight pipelining: using Python functions as pipeline jobs.'
+  license: BSD-3-Clause
   license_file: LICENSE.txt
-  summary: Python function as pipeline jobs
 
 extra:
   recipe-maintainers:
