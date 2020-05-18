@@ -1,4 +1,4 @@
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: joblib
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz
-  sha256: 7a08e3df42e376037df74ca4e2343e24410a9d4abf16fade16cfd20885d91cb8
+  sha256: b190265912e1e51a7210b115e6bd995df5bab004e793c1824600c36c476e5344
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,14 +22,19 @@ requirements:
     - setuptools
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - joblib
+    - joblib.externals
 
 about:
-  home: http://packages.python.org/joblib/
-  license: BSD 3-Clause
+  home: https://pypi.org/project/joblib/
+  summary: 'Lightweight pipelining: using Python functions as pipeline jobs.'
+  license: BSD-3-Clause
   license_file: LICENSE.txt
-  summary: 'Python function as pipeline jobs'
 
 extra:
   recipe-maintainers:
