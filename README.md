@@ -1,13 +1,13 @@
 About joblib
 ============
 
-Home: http://packages.python.org/joblib/
+Home: https://pypi.org/project/joblib/
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python function as pipeline jobs
+Summary: Lightweight pipelining: using Python functions as pipeline jobs.
 
 
 
