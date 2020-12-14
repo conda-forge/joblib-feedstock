@@ -5,11 +5,9 @@ Home: https://pypi.org/project/joblib/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/joblib-feedstock/blob/master/LICENSE.txt)
 
 Summary: Lightweight pipelining: using Python functions as pipeline jobs.
-
-
 
 Current build status
 ====================
