@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz:
+  url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz
   sha256: c8697a920865a5c870306e1073f1141876d8b574b6783a72bb13674601f7640f
 
 build:
