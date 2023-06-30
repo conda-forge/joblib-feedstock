@@ -9,16 +9,16 @@ source:
   sha256: c8697a920865a5c870306e1073f1141876d8b574b6783a72bb13674601f7640f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - setuptools
 
 test:
