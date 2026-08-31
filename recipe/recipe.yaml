@@ -1,0 +1,51 @@
+schema_version: 1
+
+context:
+  version: "1.6.0"
+
+package:
+  name: joblib
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/j/joblib/joblib-${{ version }}.tar.gz
+  sha256: 2ccc96785b12046c08fd6d55839c12857831b54a3c1673ffadd2f04bfc4eda03
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=77.0.3
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - cloudpickle >=3.0
+
+tests:
+  - python:
+      imports:
+        - joblib
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Lightweight pipelining with Python functions
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  homepage: https://joblib.readthedocs.io
+  repository: https://github.com/joblib/joblib
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - lesteve
+    - ocefpaf
+    - ogrisel
+    - pierreglaser
+    - tomMoral
