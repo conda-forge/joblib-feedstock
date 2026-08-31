@@ -1,4 +1,4 @@
-{% set version = "1.5.3" %}
+{% set version = "1.6.0" %}
 
 package:
   name: joblib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/joblib/joblib/archive/{{ version }}.tar.gz
-  sha256: 7de874013042e7c4dfd14e34c81a0fec19ab7cd8f08bf447b773488e96770fa2
+  sha256: 219db3ec84522f597d89d7537a902572fd37c14b3fd547c462fd0f09ba979364
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
     - setuptools
     - pip
   run:
+    - cloudpickle >=3.0
     - python >={{ python_min }}
     - setuptools
 
