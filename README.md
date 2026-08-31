@@ -3,11 +3,13 @@ About joblib-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/joblib-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/joblib/
+Home: https://joblib.readthedocs.io/
 
 Package license: BSD-3-Clause
 
-Summary: Lightweight pipelining: using Python functions as pipeline jobs.
+Summary: Lightweight pipelining with Python functions
+
+Development: https://github.com/joblib/joblib
 
 Current build status
 ====================
